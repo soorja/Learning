@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Psudo Class Selectors</title>
+	<style>
+		body{
+			background-color: lightgrey;
+			opacity: .8;
+			font-family: Tahoma;
+		}
+		header li{
+			list-style: none;
+			color: black;
+		}
+
+		a:link, a:visited{
+			text-decoration: none;
+			background-color: darkgrey;
+			border: 1px solid darkgrey;
+			color: black;
+			display: block;
+			width: 200px;
+			text-align: center;
+			margin-bottom: 1px;
+			cursor: pointer;
+		}
+		a:hover, a:active{
+			background-color: black;
+			color: grey;
+		}
+		section div:nth-child(odd){
+			background-color: lightgrey;
+			width: 400px;
+		}
+		section div:nth-child(even):hover{
+			background-color: darkgrey;
+			color: black;
+			width: 400px;
+		}
+		section div:nth-child(odd):hover{
+			background-color: darkgrey;
+			color: white;
+			width: 400px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Learning Psudo Class Selectors</h1>
+	<header>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="http://www.linkedin.com/in/soorja" target="_blank">My LinkedIn Page</a></li>
+			<li><a href="http://www.facebook.com/soorja" target="_blank">My Facebook Page</a></li>
+		</ul>
+	</header>
+	<section>
+		<div>This is Div-1</div>
+		<div>This is Div-2</div>
+		<div>This is Div-3</div>
+		<div>This is Div-4</div>
+		<div>This is Div-5</div>
+		<div>This is Div-6</div>
+	</section>
+</body>
+</html>
