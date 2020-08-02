@@ -4,28 +4,30 @@
 	<meta charset="utf-8">
 	<title>Floating Elements</title>
 	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
 		div{
-			background-color: lightgrey;
+			/*background-color: lightgrey;*/
 			font-family: Tahoma;
 		}
 		p{
-			width: 50px;
-			height: 50px;
-			border: 1px solid grey;
+			width: 50%;
+			/*border: 1px solid grey;*/
 			float: left;
-			margin-right: 5px;
+			padding: 5px;
 		}
 		#p1{
-			background-color: #A52A2A;
+			/*background-color: #A52A2A;*/
 		}
 		#p2{
-			background-color: #DEB887;
+			/*background-color: #DEB887;*/
 		}
 		#p3{
-			background-color: #5F9EA0;
+			/*background-color: #5F9EA0;*/
 		}
 		#p4{
-			background-color: #FF7F50;
+			/*background-color: #FF7F50;*/
 		}
 		section{
 			clear: left;
@@ -35,10 +37,11 @@
 <body>
 	<h1>Floating Elements</h1>
 	<div>
-		<p id="p1"></p>
-		<p id="p2"></p>
-		<p id="p3"></p>
-		<p id="p4"></p>
+		<p id="p1">This is a class to learn the floating boxes which in turn will create the columns in the HTML sheet. In this exercise we will try and float two paraghraphs side by side.</p>
+		<p id="p2">We will be using relative box sizes to float the boxes which will make the process very interesting indeed. However, as you practice while you are learning, one will certainly require the support with the various commands when real life project is being worked upon. I  feel that the learning givs you an option to know what are the powers of the language but you need not to remember every command.</p>
+		<p id="p3">So far what I have done has not floated the boxes side by side but has put the boxes one under the other.</p>
+		<p id="p4">The objectie however is to ensure that the boxes float side by side.</p>
+		<p style="clear: left; background-color: yellow; width: 307px; margin-top: 0px;">This is the other box</p>
 		<section>
 			This is regular content continuing after the paragraph boxes
 		</section>
